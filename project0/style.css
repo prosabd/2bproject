@@ -1,0 +1,59 @@
+/* CSS code for styling the webpage */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+h1 {
+    text-align: center;
+    color: #333333;
+}
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.gallery-item {
+    width: 30%;
+    margin: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.gallery-image {
+    width: 100%;
+    height: auto;
+}
+.gallery-caption {
+    padding: 10px;
+    font-size: 14px;
+    color: #666666;
+}
+
+.video-block
+  {
+    grid-area: video-area;
+    video{
+      width: 50vw;
+    }
+  }
+  
+  .blade
+  {
+    margin-bottom: 6em;
+    display: grid;
+    column-gap: 1em;
+    grid-template-areas: "text-area video-area";
+    align-items: center;
+    
+    &:nth-child(odd)
+    {
+      grid-template-areas: "video-area text-area";
+    }
+    &.one{
+      grid-template-areas: "video-area";
+    }
+  }
+
