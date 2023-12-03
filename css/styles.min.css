@@ -50,6 +50,9 @@ h5 {
   background-color: #005eff;
 }
 #main-btn:hover{
+    box-shadow:0px 10px 30px rgba(135, 206, 250, 0.50);
+    cursor:pointer;
+    color:#fff;
     background-color: #005eff!important;
 }
 .btn-white {
@@ -66,6 +69,8 @@ h5 {
 .btn-white:focus {
   color: #fff!important;
   border: solid 2px #005eff;
+  box-shadow:0px 10px 30px rgba(135, 206, 250, 0.50);
+  cursor:pointer;
   background-color: #005eff;
 }
 .btn-fill {
@@ -423,10 +428,12 @@ header ul.primary-nav li {
 }
 header ul.primary-nav li a {
   color: #fff;
-  padding-right: 25px;
+  margin-right: 25px;
+  /* padding-right: 25px; */
 }
 header ul.primary-nav li a:hover {
-  color: #005eff;
+    color: #005eff;
+    border-bottom:2px solid #005eff;
 }
 header ul.primary-nav li:last-child a {
   padding-right: 0px;
@@ -456,6 +463,22 @@ header .member-actions {
   bottom: 30px;
   left: 50%;
   transform: translateX(-50%);
+}
+.social {
+    color:rgb(0, 94, 255);
+    font-size:23px;
+    padding:12px 17px;
+    border-radius:50%;
+    background:transparent;
+    transition:0.4s ease-in-out;
+    font-weight:bold;
+    margin:0px 8px;
+}
+.social:hover { 
+    cursor: pointer;
+    color:#fff;
+    background:rgb(0, 94, 255);
+    box-shadow:0px 10px 30px rgba(0, 94, 255, 0.8);
 }
 .share-bar {
   margin-top: 20px;
