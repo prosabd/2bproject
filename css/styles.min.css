@@ -963,19 +963,19 @@ body.modal-open {
 #recipes{
   display: none;
 }
-.swiper {
+.swiper-cards {
   width: 250px;
   height: 450px;
   padding: 50px 0;
 }
 
-.swiper-slide {
+.cards {
   position: relative;
   box-shadow: 0 15px 50px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
 }
 
-.swiper-slide span {
+.cards span {
   position: absolute;
   top: 0;
   right: 0;
@@ -992,7 +992,7 @@ body.modal-open {
   backdrop-filter: blur(74px);
 }
 
-.swiper-slide h2 {
+.cards h2 {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -1003,47 +1003,47 @@ body.modal-open {
   margin: 0 0 20px 20px;
 }
 
-  .swiper-slide:nth-child(1n) {
+  .cards:nth-child(1n) {
     background: linear-gradient(to top, #0f2027, #203a4300, #2c536400), url("../img/IMG_7620.JPG")
         no-repeat 50% 50% / cover;
   }
 
-  .swiper-slide:nth-child(2n) {
+  .cards:nth-child(2n) {
     background: linear-gradient(to top, #0f2027, #203a4300, #2c536400), url("../img/IMG_6947.JPG")
         no-repeat 50% 50% / cover;
   }
 
-  .swiper-slide:nth-child(3n) {
+  .cards:nth-child(3n) {
     background: linear-gradient(to top, #0f2027, #203a4300, #2c536400), url("../img/IMG_6982.JPG")
         no-repeat 50% 0% / cover;
   }
 
-  .swiper-slide:nth-child(4n) {
+  .cards:nth-child(4n) {
     background: linear-gradient(to top, #0f2027, #203a4300, #2c536400), url("../img/IMG_7111.JPG")
         no-repeat 50% 50% / cover;
   }
 
-  .swiper-slide:nth-child(5n) {
-    background: linear-gradient(to top, #0f2027, #203a4300, #2c536400), url("../img/IMG_0674.JPG")
+  .cards:nth-child(5n) {
+    background: linear-gradient(to top, #0f2027, #203a4300, #2c536400), url("../img/IMG_0759.JPG")
         no-repeat 50% 50% / cover;
   }
 
-  .swiper-slide:nth-child(6n) {
+  .cards:nth-child(6n) {
     background: linear-gradient(to top, #0f2027, #203a4300, #2c536400), url("../img/IMG_9199.JPG")
         no-repeat 50% 50% / cover;
   }
 
-  .swiper-slide:nth-child(7n) {
+  .cards:nth-child(7n) {
     background: linear-gradient(to top, #0f2027, #203a4300, #2c536400), url("../img/IMG_7769.JPG")
         no-repeat 50% 50% / cover;
   }
 
-  .swiper-slide:nth-child(8n) {
+  .cards:nth-child(8n) {
     background: linear-gradient(to top, #0f2027, #203a4300, #2c536400), url("../img/IMG_7721.JPG")
         no-repeat 50% 0% / cover;
   }
 
-  .swiper-slide:nth-child(9n) {
+  .cards:nth-child(9n) {
     background: linear-gradient(to top, #0f2027, #203a4300, #2c536400), url("../img/IMG_0674.JPG")
         no-repeat 50% 50% / cover;
   }
@@ -1051,12 +1051,12 @@ body.modal-open {
 
 @media only screen and (min-width: 1025px) {
 
-.swiper{
+.swiper-cards{
   display:none;
 }
 #recipes {
   display: flex;
-  background: radial-gradient(circle, rgba(115,12,50,1) 5%, rgba(13,12,12,1) 60%);
+  /* background: radial-gradient(circle, rgba(0,94,255,1) 5%, rgba(13,12,12,0) 60%); */
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -1068,19 +1068,20 @@ body.modal-open {
 .recipe-container {
   height: 450px;
   padding: 50px 0;
-  background: rgba(133, 133, 133, 0.2);
+  /* background: radial-gradient(circle, rgba(0,94,255,1) 5%, rgba(133, 133, 133, 0) 60%); */
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 25px;
-  padding: 30px 0;
-  width: min(100%);
-  /* width: min(1200px, 100%); */
+  padding: 30px 30px;
+  /* width: min(100%); */
+  width: min(1200px, 100%);
 }
 
 .post {
   position: relative;
+  width: 100%;
   max-width: 250px;
   padding: 1rem;
   font-family: inherit;
@@ -1098,8 +1099,8 @@ body.modal-open {
   top: 0;
   left: 0;
   right: 0;
-  bottom: 15px;
-  background: rgba(236, 149, 200, 0.2);
+  bottom: 0;
+  background: rgba(0, 94, 255, 0.73);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
   z-index: -1;
@@ -1108,26 +1109,28 @@ body.modal-open {
 .post-img {
   width: 100%;
   max-width: 400px;
+  height: 100%;
   object-fit: cover;
   overflow: hidden;
   aspect-ratio: 4/3;
   border-radius: 6px;
 }
 
-.swiper2 {
-  width: 80%;
+.swiper-post {
+  width: 90%;
   height: 100%;
   margin-bottom: 30px;
+  padding-bottom: 15px;
 }
 
 .swiper-scrollbar {
   --swiper-scrollbar-bottom: 0px;
-  --swiper-scrollbar-drag-bg-color: #dda3b6;
+  --swiper-scrollbar-drag-bg-color: #87cefa;
   --swiper-scrollbar-size: 5px;
 }
 
 /* MEDIA QUERIES */
-
+/*
 @media (max-width: 1200px) { 
   .swiper2 {
       width: 80%;
@@ -1159,6 +1162,6 @@ body.modal-open {
     width: 80%;
   }
 }
-
+*/
 
 }
