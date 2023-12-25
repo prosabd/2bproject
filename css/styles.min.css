@@ -822,13 +822,14 @@ header .member-actions {
   color: #fff;
 }
 #map-canvas {
-  height: 500px;
+  height: 400px;
   width: 100%;
 }
 #map-content-wrapper {
   position: relative;
-  margin-top: -502px;
+  /* margin-top: -502px; */
   margin-bottom: 150px;
+  z-index: 2;
 }
 #map-content {
   margin-top: 40px;
@@ -836,6 +837,17 @@ header .member-actions {
   background: #fff;
   -webkit-transition: opacity 0.5s, visibility 0.6s, margin-top 0.5s;
   transition: opacity 0.5s, visibility 0.6s, margin-top 0.5s;
+  box-shadow:0px 0px 18px 7px  rgba(0, 94, 255, 0.3);
+}
+@media only screen and (max-width: 1025px) {
+  #map-content-wrapper .info-card {
+    padding-top: 2%;
+  }
+}
+@media only screen and (max-width: 991px) {
+  #map-content-wrapper .info-card {
+    padding-top: 6%;
+  }
 }
 #btn-show-content {
   padding: 20px;

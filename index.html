@@ -97,7 +97,7 @@
                     </nav>
                 </div>
                 <div class="navicon">
-                    <!-- <a class="nav-toggle" href="#"><span></span></a> -->
+                    <a class="nav-toggle" href="#"><span></span></a>
                 </div>
             </div>
         </header>
@@ -394,7 +394,6 @@
                         </div>
                     </div>
                     <div class="swiper-scrollbar"></div>
-                  </div>
                 </div>
             </div>
         </div>
@@ -416,49 +415,48 @@
 
 <section id="video-bg" class="hidden-sm hidden-xs">
     <div id="bgndVideo" class="player"
-         data-property="{videoURL:'https://youtu.be/9giqL1H6yRs',containment:'#video-bg',autoPlay:true, mute:true, showControls:false, startAt:80, stopAt:259, opacity:1}">
+         data-property="{videoURL:'https://youtu.be/X8C-hGl-YlM',containment:'#video-bg',autoPlay:true, mute:true, showControls:false, startAt:00, stopAt:24, opacity:1}">
     </div>
     <div id="video-content">
-        <h5>Kolkata</h5>
-        <p>City of joy</p>
+        <h5>Interventions</h5>
+        <p>En situation</p>
     </div>
 </section>
 
 <section id="map" class="section-padding">
     <div class="text-center">
-        <h3>How do I get there?</h3>
-        <p>It's way easier than you think!</p>
+        <h3>Ou pouvez-vous nous trouver?</h3>
+        <p>C'est plus simple que vos pensez !</p>
     </div>
-    <div id="map-canvas"></div>
-    <div id="map-content-wrapper" class="container pointer-events-none">
-        <div class="row">
-            <div class="col-xs-offset-1 col-xs-10 col-md-offset-3 col-md-6">
-                <div class="text-center">
-                    <div id="btn-show-content" class="toggle-map-content pointer-events-auto">
-                        <i class="fa fa-info-circle"></i>&nbsp;&nbsp; Show info
+    <div id="map-canvas">
+        <iframe src="http://maps.google.com/maps?f=q&t=m&z=15&ll=48.9134176,2.6614752&output=embed" width="100%" height="45%" 
+            frameborder="0" style="position: absolute; z-index: 1;"></iframe>
+        <div id="map-content-wrapper" class="container pointer-events-none" style="position: relative; z-index: 2;">
+            <div class="row info-card">
+                <div class="col-xs-offset-1 col-xs-10 col-md-offset-3 col-md-6">
+                    <div class="text-center map-main">
                     </div>
-                </div>
-                <div id="map-content" class="pointer-events-auto">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <h5>ITC Fortune Park</h5>
-                            <p>Kona Expressway, Howrah, West Bengal 711403, India</p>
+                    <div id="map-content" class="pointer-events-auto">
+                        <div class="row text-center">
+                            <div class="col">
+                                <h5>Centre Technique</h5>
+                                <p>1 Chemin de l'Église, Villevaudé 77410</p>
+                            </div>
+                            <div class="col">
+                                <h5>Centre Téléphonique</h5>
+                                <p class="mt-2"><i class="fa fa-mobile"></i> <a href="tel://+33760257548">+33 7 60 25 75 48</a><br></p>
+                            </div>
                         </div>
-                        <div class="col-md-6">
-                            <h5>Mr. Amit Roy</h5>
-                            <p><i class="fa fa-mobile"></i> <a href="tel://+919412345678">+91 9412345678</a><br>
-                                <i class="fa fa-mobile"></i> <a href="tel://+917123456789">+91 7123456789</a></p>
-                        </div>
-                    </div>
-                    <div class="row text-center">
-                        <div class="col-md-6" style="padding: 5px;">
-                            <a class="btn btn-fill btn-small"
-                               href="https://m.uber.com/ul/?action=setPickup&client_id=Yh7Dl6SjB56RY2JuuZF8ttVa6ryFV78W&pickup=my_location&dropoff[formatted_address]=Fortune%20Park%20Panchwati%20-%20Hotels%20in%20Kolkata%2C%20Howrah%2C%20West%20Bengal%2C%20India&dropoff[latitude]=22.593276&dropoff[longitude]=88.270277"><i
-                                    class="fa fa-taxi"></i>&nbsp;&nbsp;Book Uber</a>
-                        </div>
-                        <div class="col-md-6" style="padding: 5px;">
-                            <a class="btn btn-accent btn-small" id="btn-show-map"><i class="fa fa-map-marker"></i>&nbsp;&nbsp;Show
-                                map</a>
+                        <div class="row text-center" style="padding-left: 10px;">
+                            <div class="col-md-6" style="padding: 5px;">
+                                <a class="btn btn-fill btn-small"
+                                href="https://m.uber.com/ul/?action=setPickup&client_id=vy1TKMxD9vgRr4HhLRoxi8XXUU-7KFotxOlUrpeP&pickup=my_location&dropoff[formatted_address]=1%20Chemin%20de%20l'%C3%89glise%2C%20Villevaud%C3%A9%2C%20France&dropoff[latitude]=48.913619&dropoff[longitude]=2.661499"><i
+                                        class="fa fa-taxi"></i>&nbsp;&nbsp;Aller en Uber</a>
+                            </div>
+                            <div class="col-md-6" style="padding: 5px;">
+                                <a class="btn btn-accent btn-small" id="btn-show-map"><i class="fa fa-map-marker"></i>&nbsp;&nbsp;Voir
+                                    carte</a>
+                            </div>
                         </div>
                     </div>
                 </div>
