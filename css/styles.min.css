@@ -612,7 +612,7 @@ header .member-actions {
 }
 .hero-strip {
   margin-top: 120px;
-  background: #333844 url("../img/polygonal-bg.jpg") no-repeat center center;
+  /* background: #333844 url("../img/polygonal-bg.jpg") no-repeat center center; */
   padding-bottom: 190px;
   position: relative;
 }
@@ -871,14 +871,16 @@ header .member-actions {
   padding-bottom: 140px;
 }
 .rsvp .rsvp-form .rsvp-btn {
+  /* position: relative; Positionne le bouton de manière absolue par rapport au conteneur */
   padding: 15px 0;
   border-radius: 3px;
   width: 100%;
   font-size: 13px;
+  min-height: 100%;
 }
 .rsvp .rsvp-form .form-input-group {
   width: 100%;
-  height: 55px;
+  min-height: 55px;
   margin: 0 auto 10px;
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
@@ -902,9 +904,9 @@ header .member-actions {
   transform: translateY(-50%);
 }
 .rsvp .rsvp-form .form-input-group i.fa-user,
-.rsvp .rsvp-form .form-input-group i.fa-users,
+.rsvp .rsvp-form .form-input-group i.fa-comments,
 .rsvp .rsvp-form .form-input-group i.fa-envelope,
-.rsvp .rsvp-form .form-input-group .fa-key {
+.rsvp .rsvp-form .form-input-group .fa-phone {
   font-size: 14px;
   position: absolute;
   top: 50%;
@@ -914,13 +916,28 @@ header .member-actions {
 .rsvp .rsvp-form .form-input-group input {
   padding-left: 68px;
   width: 100%;
-  height: 100%;
+  min-height: 55px;
   -moz-border-radius: 6px;
   -webkit-border-radius: 6px;
   border-radius: 6px;
   border: none;
 }
+.rsvp .rsvp-form .form-input-group textarea {
+  padding-left: 5em;
+  padding-top: 1.2em;
+  width: 100%;
+  min-height: 100%;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+  border: none;
+  overflow: hidden; /* Cache le contenu débordant */
+  resize: none;
+}
 .rsvp .rsvp-form .form-input-group input::-webkit-input-placeholder {
+  color: #bcc1c3;
+}
+.rsvp .rsvp-form .form-input-group textarea::-webkit-input-placeholder {
   color: #bcc1c3;
 }
 .rsvp .rsvp-form .form-input-group input:-moz-placeholder {
@@ -1141,39 +1158,6 @@ body.modal-open {
   --swiper-scrollbar-size: 5px;
 }
 
-/* MEDIA QUERIES */
-/*
-@media (max-width: 1200px) { 
-  .swiper2 {
-      width: 80%;
-    }
-}
 
-@media (max-width: 900px) {
-  #recipes {
-    padding: 60px 80px;
-  }
-
-  .swiper2 {
-    width: 50%;
-  }
-}
-
-@media (max-width: 765px) {
-  .swiper2 {
-    width: 70%;
-  }
-}
-
-@media (max-width: 550px) {
-  #recipes {
-    padding: 40px 40px;
-  }
-
-  .swiper2 {
-    width: 80%;
-  }
-}
-*/
 
 }

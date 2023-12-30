@@ -1,7 +1,7 @@
 {
-  "name": "wedding-website",
+  "name": "2bdepannage",
   "version": "1.0.1",
-  "description": "A wedding website with loads of features.",
+  "description": "Des depannages en toute circonstances.",
   "main": "npmfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -17,7 +17,7 @@
   ],
   "author": "Ram Patra",
   "license": "GPL-3.0",
-  "homepage": "https://github.com/rampatra/wedding-website",
+  "homepage": "https://github.com/prosabd/2bproject",
   "devDependencies": {
     "gulp": "^4.0.2",
     "gulp-rename": "^1.4.0",
