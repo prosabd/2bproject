@@ -14,3 +14,6 @@ Un beau site vitrine pour une societe de depannage.
 3. `$ npm install` - install dependencies
 4. `$ gulp` - compile sass to css, minify js, etc.
 5. That's it, open `index.html` file on your browser by just double-clicking on it.
+
+
+credits @rampatra
