@@ -367,7 +367,7 @@ section .header {
 }
 .hero {
   min-height: 750px;
-  background: url('../img/IMG_7787.jpg') center center;
+  background: url('../img/IMG_7787.JPG') center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -869,6 +869,8 @@ header .member-actions {
 }
 .rsvp {
   padding-bottom: 140px;
+  position: relative;
+  z-index: 3;
 }
 .rsvp .rsvp-form .rsvp-btn {
   /* position: relative; Positionne le bouton de manière absolue par rapport au conteneur */
@@ -948,6 +950,16 @@ header .member-actions {
 }
 .rsvp .rsvp-form .form-input-group input:-ms-input-placeholder {
   color: #bcc1c3;
+}
+.rsvp .rsvp-form .form-input-group input::-webkit-outer-spin-button,input::-webkit-inner-spin-button{
+  -webkit-appearance: none;
+}
+/* Firefox */
+.rsvp .rsvp-form .form-input-group input[type=number] {
+  -moz-appearance: textfield;
+}
+footer {
+    padding-top: 2em;
 }
 footer .content {
   border-top: 1px solid #e6e9ea;
