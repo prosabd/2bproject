@@ -123,7 +123,7 @@
                     <tr>
                         <td class="animated zoomIn" style="animation-delay:2.2s;"><a class="social" target="_blank" href="https://www.snapchat.com/add/bilal410"><i class="fab fa-snapchat-ghost"></i></a></td>
                         <td class="animated zoomIn" style="animation-delay:2.6s;"><a class="social" target="_blank" href="tel:0760257548"><i class="fab fas fa-phone"></i></a></td>
-                        <td class="animated zoomIn" style="animation-delay:2.8s;"><a class="social" target="_blank" href="https://wa.me/0760257548?text=Bonjour%2FBonsoir%2C+je+vous+contacte+suite+%C3%A0+un+accident+%2F%2F+une+panne+%2F%2F+une+%C3%A9pave+%C3%A0+retirer.+Mon+nom+est+.....+et+l%27adresse+est+....+%2C+veuillez+me+recontacter+dans+les+plus+brefs+d%C3%A9lais.">
+                        <td class="animated zoomIn" style="animation-delay:2.8s;"><a class="social" target="_blank" href="https://wa.me/+33760257548?text=Bonjour%2FBonsoir%2C+je+vous+contacte+suite+%C3%A0+un+accident+%2F%2F+une+panne+%2F%2F+une+%C3%A9pave+%C3%A0+retirer.+Mon+nom+est+.....+et+l%27adresse+est+....+%2C+veuillez+me+recontacter+dans+les+plus+brefs+d%C3%A9lais.">
                             <i class="fab fa-whatsapp"></i></a></td>
                         <!-- <td class="animated zoomIn" style="animation-delay:2.4s;"><a class="social"><i class="fab fa-twitter"></i></a></td>
                         <td class="animated zoomIn" style="animation-delay:2.8s;"><a class="social"><i class="fab fa-instagram"></i></a></td>
@@ -474,13 +474,13 @@
                         <div class="col-md-6 col-sm-6">
                             <div class="form-input-group">
                                 <i class="fa fa-envelope"></i><input type="email" name="email" class=""
-                                                                     placeholder="Email"
+                                                                     id="email-form" placeholder="Email"
                                                                      required>
                             </div>
                         </div>
                         <div class="col-md-6 col-sm-6">
                             <div class="form-input-group">
-                                <i class="fa fa-user"></i><input name="name" class=""
+                                <i class="fa fa-user"></i><input name="name" class="" id="name-form"
                                                                  placeholder="Votre Nom"
                                                                  required>
                             </div>
@@ -497,19 +497,19 @@
                         </div>
                         <div class="col-md-12 col-sm-6">
                             <div class="form-input-group" style=" border: none !important;">
-                                <i class="fa fa-comments"></i><textarea type="text" name="extras" class="form-control" min="0"
-                                                                  max="4"
-                                                                  id="myTextArea"
-                                                                  height="30px"
-                                                                  placeholder="Votre message..."
-                                                                  required></textarea>
+                                <i class="fa fa-comments"></i><textarea type="text" name="extras" 
+                                                                        class="form-control" min="0"
+                                                                        max="4" id="myTextArea"
+                                                                        height="30px"
+                                                                        placeholder="Votre message..."
+                                                                        required></textarea>
                             </div>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-md-12" id="alert-wrapper"></div>
                     </div>
-                    <button class="btn-fill rsvp-btn">
+                    <button class="btn-fill rsvp-btn" id="submit-form">
                         Envoyer
                     </button>
                 </form>
