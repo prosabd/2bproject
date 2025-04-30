@@ -1180,14 +1180,15 @@ body.modal-open {
   font-size: 14px;
   cursor: pointer;
   position: relative;
-  overflow: hidden;
   transition: color 0.3s, background 0.3s;
   z-index: 1;
 }
+
 .legal-btn:hover {
-  color: #fff;
-  background: #222;
+  background: #333;
+  color: #ddd;
 }
+
 .legal-btn::before {
   content: "";
   position: absolute;
@@ -1201,6 +1202,7 @@ body.modal-open {
   transition: width 0.6s, height 0.6s;
   z-index: -1;
 }
+
 .legal-btn:hover::before {
   width: 40px;
   height: 40px;
@@ -1226,6 +1228,8 @@ body.modal-open {
   margin: 60px auto 0;
   padding: 40px 20px 30px;
   position: relative;
+  background: #fff;
+  border-radius: 16px;
 }
 .close-legal {
   position: absolute;
@@ -1251,6 +1255,7 @@ body.modal-open {
 .close-legal span:last-child { transform: rotate(-45deg); }
 .close-legal:hover span { background: #005eff; }
 
+
 /* Bubble animation */
 .bubble-animation {
   position: fixed;
@@ -1264,4 +1269,5 @@ body.modal-open {
 @keyframes bubbleExpand {
   from { width: 0; height: 0; opacity: 1; }
   to { width: 300vw; height: 300vw; opacity: 1; }
+}
 }
