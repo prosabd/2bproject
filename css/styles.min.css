@@ -1169,6 +1169,7 @@ body.modal-open {
   --swiper-scrollbar-drag-bg-color: #87cefa;
   --swiper-scrollbar-size: 5px;
 }
+}
 
 /* Legal Mentions Button */
 .legal-btn {
@@ -1254,7 +1255,6 @@ body.modal-open {
 .close-legal span:first-child { transform: rotate(45deg); }
 .close-legal span:last-child { transform: rotate(-45deg); }
 .close-legal:hover span { background: #005eff; }
-
 
 /* Bubble animation */
 .bubble-animation {
